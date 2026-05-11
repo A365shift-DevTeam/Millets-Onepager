@@ -54,7 +54,7 @@ function Login() {
             {busy ? 'Signing in…' : 'Sign In'}
           </button>
         </form>
-        <a href="#" className="admin-back-link">← Back to Shop</a>
+        <a href="/" className="admin-back-link">← Back to Shop</a>
       </div>
     </div>
   );

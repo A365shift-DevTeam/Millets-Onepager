@@ -29,30 +29,73 @@ const Icon = {
 // ---------- NAV ----------
 export function Nav() {
   const { total } = useCart();
+  const [open, setOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    const close = () => setOpen(false);
+    window.addEventListener('hashchange', close);
+    return () => window.removeEventListener('hashchange', close);
+  }, []);
+
+  React.useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [open]);
+
+  const close = () => setOpen(false);
+
   return (
-    <nav className="nav">
-      <div className="nav-inner">
-        <a href="#home" className="brand">
-          <div className="brand-mark">M</div>
-          <div>
-            <div className="brand-name">MILLET FAM</div>
-            <div className="brand-sub">A Healthy Lifestyle</div>
+    <>
+      <nav className="nav">
+        <div className="nav-inner">
+          <a href="#home" className="brand" onClick={close}>
+            <div className="brand-mark">M</div>
+            <div>
+              <div className="brand-name">MILLET FAM</div>
+              <div className="brand-sub">A Healthy Lifestyle</div>
+            </div>
+          </a>
+          <div className="nav-links">
+            <a className="nav-link" href="#home">Home</a>
+            <a className="nav-link" href="#products">Products</a>
+            <a className="nav-link" href="#ingredients">Ingredients</a>
+            <a className="nav-link" href="#benefits">Benefits</a>
+            <a className="nav-link" href="#about">About</a>
+            <a className="nav-link" href="#contact">Contact</a>
           </div>
-        </a>
-        <div className="nav-links">
-          <a className="nav-link" href="#home">Home</a>
-          <a className="nav-link" href="#products">Products</a>
-          <a className="nav-link" href="#ingredients">Ingredients</a>
-          <a className="nav-link" href="#benefits">Benefits</a>
-          <a className="nav-link" href="#about">About</a>
-          <a className="nav-link" href="#contact">Contact</a>
+          <div className="nav-actions">
+            <a href="/checkout" className="nav-cta" onClick={close}>
+              Order Now
+              {total > 0 && <span className="nav-cart-ct">{total}</span>}
+            </a>
+            <button
+              className={`nav-burger${open ? ' open' : ''}`}
+              onClick={() => setOpen(o => !o)}
+              aria-label="Toggle navigation"
+              aria-expanded={open}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
-        <a href="#checkout" className="nav-cta">
-          Order Now
-          {total > 0 && <span className="nav-cart-ct">{total}</span>}
-        </a>
+      </nav>
+
+      <div className={`mobile-overlay${open ? ' active' : ''}`} aria-hidden={!open}>
+        <div className="mobile-overlay-inner">
+          <a className="mobile-nav-link" href="#home" onClick={close}>Home</a>
+          <a className="mobile-nav-link" href="#products" onClick={close}>Products</a>
+          <a className="mobile-nav-link" href="#ingredients" onClick={close}>Ingredients</a>
+          <a className="mobile-nav-link" href="#benefits" onClick={close}>Benefits</a>
+          <a className="mobile-nav-link" href="#about" onClick={close}>About</a>
+          <a className="mobile-nav-link" href="#contact" onClick={close}>Contact</a>
+          <a className="mobile-nav-cta" href="/checkout" onClick={close}>
+            Order Now {total > 0 && <span className="nav-cart-ct">{total}</span>}
+          </a>
+        </div>
       </div>
-    </nav>
+    </>
   );
 }
 
@@ -101,7 +144,7 @@ export function Hero() {
           <div className="hero-tagline">Healthy Snacks For A Better You</div>
           <div className="hero-ctas">
             <a className="btn-primary" href="#products">Explore  <Icon.ArrowRight/></a>
-            <a className="btn-ghost" href="#checkout">Order Now</a>
+            <a className="btn-ghost" href="/checkout">Order Now</a>
           </div>
           <div className="hero-meta">
             <div className="item"><div className="num">100%</div><div className="lbl">Natural</div></div>

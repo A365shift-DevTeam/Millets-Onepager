@@ -19,14 +19,14 @@ function MiniNav() {
   return (
     <header className="co-header">
       <div className="co-header-inner">
-        <a href="#" className="brand" style={{ textDecoration: 'none', color: 'var(--brown-900)' }}>
+        <a href="/" className="brand" style={{ textDecoration: 'none', color: 'var(--brown-900)' }}>
           <div className="brand-mark">M</div>
           <div>
             <div className="brand-name">MILLET FAM</div>
             <div className="brand-sub">A Healthy Lifestyle</div>
           </div>
         </a>
-        <a href="#" className="co-back">← Back to Shop</a>
+        <a href="/" className="co-back">← Back to Shop</a>
       </div>
     </header>
   );
@@ -167,7 +167,7 @@ export default function Checkout() {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download Receipt
           </button>
-          <a href="#" className="btn-ghost" style={{ display: 'inline-flex' }}>← Back to Shop</a>
+          <a href="/" className="btn-ghost" style={{ display: 'inline-flex' }}>← Back to Shop</a>
         </div>
       </div>
     </div>
