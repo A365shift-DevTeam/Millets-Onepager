@@ -156,6 +156,37 @@ body {
   border-radius: 28px;
 }
 
+/* --- Top Banner --- */
+.top-banner {
+  background: var(--brown-900);
+  color: var(--cream-light);
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 100;
+}
+
+.top-banner .dot {
+  color: var(--orange);
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .top-banner {
+    font-size: 11px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
+
 /* --- Nav --- */
 .nav {
   position: sticky;

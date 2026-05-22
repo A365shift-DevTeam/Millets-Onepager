@@ -10,6 +10,7 @@ import {
   Testimonials,
   useReveal,
   Why,
+  TopBanner,
 } from './components.jsx';
 import Checkout from './Checkout.jsx';
 import Admin    from './Admin.jsx';
@@ -58,6 +59,7 @@ export default function App() {
   return (
     <>
       <div className="page-bg"></div>
+      <TopBanner/>
       <Nav/>
       <Hero/>
       <Products/>

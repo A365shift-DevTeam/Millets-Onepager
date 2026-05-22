@@ -3,11 +3,14 @@ import { supabase } from './supabase.js';
 import { useCart } from './CartContext.jsx';
 
 const PRODUCTS = [
-  { name: 'Millet Crunch Mix',  tagline: 'Healthy tea-time snack with the perfect crunch.',         price: 249, unit: '200g',       img: '/assets/images/crunch-mix.jpg' },
-  { name: 'Millet Energy Bar',  tagline: 'Slow-roasted millets, almonds & cocoa for clean fuel.',   price: 299, unit: 'Pack of 6',  img: '/assets/images/energy-bar.jpg' },
-  { name: 'Millet Laddu',       tagline: 'Heritage recipe, slow-rolled with seven millets.',         price: 349, unit: '12 pcs',     img: '/assets/images/laddu.jpg'      },
-  { name: 'Millet Cookies',     tagline: 'Baked, never fried — choco-chip joy.',                     price: 199, unit: '150g',       img: '/assets/images/cookies.jpg'    },
-  { name: 'Ragi Crisps',        tagline: 'Light, crispy ragi rounds with curry leaves & spice.',     price: 179, unit: '100g',       img: '/assets/images/crisps.jpg'     },
+  { name: 'Assorted Millet Energy Balls',  tagline: 'A diverse mix of all our signature energy balls.', price: 399, unit: 'Pack of 8', img: '/assets/product images/Assorted Millet Energy Balls.png' },
+  { name: 'Ragi Classic Laddu',            tagline: 'Classic ragi laddu made with pure jaggery.',       price: 349, unit: '12 pcs',    img: '/assets/product images/Ragi Classic Laddu.png' },
+  { name: 'Ragi Mixed Nut Laddu',          tagline: 'Traditional ragi laddu loaded with premium mixed nuts.', price: 399, unit: '12 pcs',    img: '/assets/product images/Ragi Mixed Nut Laddu.png' },
+  { name: 'Foxtail Pumpkin Balls',         tagline: 'Foxtail millet infused with roasted pumpkin seeds.', price: 299, unit: 'Pack of 6', img: '/assets/product images/foxtail-pumpkin-balls.png' },
+  { name: 'Honey Oat Balls',               tagline: 'Wholesome oats sweetened naturally with wild honey.', price: 299, unit: 'Pack of 6', img: '/assets/product images/honey-oat-balls.png' },
+  { name: 'Jowar Almond Balls',            tagline: 'Roasted jowar combined with crushed almonds.',       price: 329, unit: 'Pack of 6', img: '/assets/product images/jowar-almond-balls.png' },
+  { name: 'Moringa Millet Balls',          tagline: 'Millet bites enriched with nutrient-dense moringa.', price: 349, unit: 'Pack of 6', img: '/assets/product images/moringa-millet-balls.png' },
+  { name: 'Multigrain Nut Balls',          tagline: 'A powerhouse of nine grains and premium nuts.',      price: 379, unit: 'Pack of 6', img: '/assets/product images/multigrain-nut-balls.png' },
 ];
 
 function mkOrderNum() {
