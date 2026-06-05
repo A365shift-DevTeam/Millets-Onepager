@@ -632,22 +632,6 @@ body {
   transform: scale(1.07);
 }
 
-.product-img-wrap::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 52%;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(255, 252, 244, 0.55) 60%,
-    rgba(255, 252, 244, 0.96) 100%
-  );
-  pointer-events: none;
-  z-index: 1;
-}
 
 .product-tag {
   position: absolute;
