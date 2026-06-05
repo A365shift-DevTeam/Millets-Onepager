@@ -182,68 +182,85 @@ export function Hero() {
 // ---------- PRODUCTS ----------
 const PRODUCTS = [
   {
-    name: "Assorted Millet Energy Balls", tag: "Perfect Mix of Flavors",
-    img: "/assets/product images/Assorted Millet Energy Balls.png",
-    tagline: "A diverse mix of all our signature energy balls.",
-    ingredients: "Ragi · Jowar · Foxtail · Dates · Mixed Nuts",
-    icons: [{i:'Bolt', l:'High Protein'}, {i:'NoMaida', l:'No Refined Sugar'}, {i:'Flame', l:'Energy Booster'}],
+    name: "Urad Dal Laddu", tag: "Protein Rich Traditional Treat",
+    img: "/assets/product images/1.Urad Dal Laddu.jpg",
+    tagline: "Perfect for healthy snacking, post-work nourishment, and everyday wellness.",
+    description: "Handcrafted with roasted urad dal, pure ghee, nuts, and natural sweetness, our Urad Dal Laddu is a wholesome traditional treat packed with rich flavor and nourishment. Known for its protein, iron, and energy-boosting properties, urad dal helps support strength, stamina, and overall wellness.",
+    ingredients: "Urad dal powder, jaggery, ghee, elachi",
+    icons: [{i:'Bolt', l:'High Protein'}, {i:'Wheat', l:'Iron Rich'}, {i:'Flame', l:'Energy Booster'}],
     price: "₹399", unit: "Pack of 8",
   },
   {
-    name: "Ragi Classic Laddu", tag: "Traditional & Authentic",
-    img: "/assets/product images/Ragi Classic Laddu.png",
-    tagline: "Classic ragi laddu made with pure jaggery.",
-    ingredients: "Ragi · Jaggery · Ghee · Cardamom",
-    icons: [{i:'NoMaida', l:'No Maida'}, {i:'Honey', l:'Jaggery Sweetened'}, {i:'Wheat', l:'Calcium Rich'}],
+    name: "Green Gram Laddu", tag: "Wholesome Everyday Indulgence",
+    img: "/assets/product images/2.Green gram laddu.jpg",
+    tagline: "A perfect healthy snack for everyday nourishment.",
+    description: "Made with wholesome green gram, pure ghee, nuts, and natural sweetness, our Green Gram Laddu is a nourishing traditional treat crafted for healthy everyday indulgence. Rich in protein, fiber, and essential nutrients, green gram helps support digestion, sustained energy, and overall wellness while delivering delicious homemade flavors.",
+    ingredients: "Green gram powder, jaggery, cashew, ghee",
+    icons: [{i:'Bolt', l:'High Protein'}, {i:'Wheat', l:'Rich Fiber'}, {i:'Leaf', l:'Digestive Support'}],
     price: "₹349", unit: "12 pcs",
   },
   {
-    name: "Ragi Mixed Nut Laddu", tag: "Nutty & Nutritious",
-    img: "/assets/product images/Ragi Mixed Nut Laddu.png",
-    tagline: "Traditional ragi laddu loaded with premium mixed nuts.",
-    ingredients: "Ragi · Almonds · Cashews · Pistachios · Jaggery",
-    icons: [{i:'Bolt', l:'High Protein'}, {i:'Shield', l:'No Preservatives'}, {i:'Heart', l:'Healthy Fats'}],
+    name: "Jowar Millet Laddu", tag: "Millet Goodness With Homemade Flavor",
+    img: "/assets/product images/3.Jowar Millet Laddu.jpg",
+    tagline: "Perfect for everyday nourishment, guilt-free sweet cravings, and healthy family snacking.",
+    description: "Made with wholesome jowar millet, pure ghee, nuts, and natural sweetness, our Jowar Millet Laddu combines traditional goodness with rich homemade flavor. Naturally rich in fiber, iron, and essential nutrients, jowar millet helps support digestion, sustained energy, and overall wellness while making healthy snacking satisfying.",
+    ingredients: "Jowar millet powder, jaggery, cashew, ghee, elachi",
+    icons: [{i:'Wheat', l:'High Fiber'}, {i:'Wheat', l:'Iron Rich'}, {i:'Flame', l:'Sustained Energy'}],
     price: "₹399", unit: "12 pcs",
   },
   {
-    name: "Foxtail Pumpkin Balls", tag: "Seed Powered Energy",
-    img: "/assets/product images/foxtail-pumpkin-balls.png",
-    tagline: "Foxtail millet infused with roasted pumpkin seeds.",
-    ingredients: "Foxtail Millet · Pumpkin Seeds · Dates · Jaggery",
-    icons: [{i:'Wheat', l:'High Fiber'}, {i:'Gluten', l:'Gluten Free'}, {i:'NoMaida', l:'No Refined Sugar'}],
+    name: "Sattu Laddu", tag: "Traditional Comfort, Modern Goodness",
+    img: "/assets/product images/4.Sattu Laddu.jpg",
+    tagline: "A timeless Indian superfood reimagined for today's lifestyle.",
+    description: "Our Sattu Laddu is crafted for those who crave traditional comfort with modern healthy goodness. Made with wholesome sattu, pure ghee, nuts, and natural sweetness, every bite delivers rich flavor, nourishment, and lasting energy. Packed with natural protein, fiber, and rich traditional flavor, it is the perfect balance of health, energy, and indulgence.",
+    ingredients: "Wheat flour, channa gram flour, jaggery, cashew, sunflower seeds, pumpkin seeds, almond, dry grapes, dry coconut, ghee",
+    icons: [{i:'Bolt', l:'Natural Protein'}, {i:'Wheat', l:'Rich Fiber'}, {i:'Flame', l:'Lasting Energy'}],
     price: "₹299", unit: "Pack of 6",
   },
   {
-    name: "Honey Oat Balls", tag: "Classic Morning Fuel",
-    img: "/assets/product images/honey-oat-balls.png",
-    tagline: "Wholesome oats sweetened naturally with wild honey.",
-    ingredients: "Oats · Honey · Peanut Butter · Chia Seeds",
-    icons: [{i:'Honey', l:'Naturally Sweet'}, {i:'Bolt', l:'Sustained Energy'}, {i:'Wheat', l:'Rich in Fiber'}],
+    name: "Dry Fruit Laddu", tag: "Premium Nuts, Seeds, And Natural Energy",
+    img: "/assets/product images/5.Dry Fruit Laddu.jpg",
+    tagline: "A guilt-free snack for everyday nourishment, fitness lifestyles, and family wellness.",
+    description: "Crafted with a rich blend of premium dry fruits, nuts, seeds, and natural sweetness, our Dry Fruit Laddu is a wholesome indulgence packed with nutrition and flavor. Loaded with natural energy, healthy fats, fiber, and essential nutrients, this nourishing laddu helps support stamina, immunity, and overall wellness while satisfying sweet cravings the healthy way.",
+    ingredients: "Dates, flax seeds, black raisins, cashew, sunflower seeds, pumpkin seeds, oats, almond, vanilla essence",
+    icons: [{i:'Flame', l:'Natural Energy'}, {i:'Heart', l:'Healthy Fats'}, {i:'Shield', l:'Wellness Support'}],
     price: "₹299", unit: "Pack of 6",
   },
   {
-    name: "Jowar Almond Balls", tag: "Nutty Sorghum Delight",
-    img: "/assets/product images/jowar-almond-balls.png",
-    tagline: "Roasted jowar combined with crushed almonds.",
-    ingredients: "Jowar · Almonds · Dates · Cardamom",
-    icons: [{i:'Wheat', l:'Iron Loaded'}, {i:'Heart', l:'Heart Healthy'}, {i:'NoMaida', l:'No Preservatives'}],
+    name: "Flaxseed Laddu", tag: "Omega-Rich Healthy Indulgence",
+    img: "/assets/product images/6.Flaxseed Laddu.jpg",
+    tagline: "Perfect for healthy snacking, mindful sweet cravings, and everyday family wellness.",
+    description: "Made with nutrient-rich flax seeds, pure ghee, nuts, and natural sweetness, our Flaxseed Laddu is a wholesome blend of traditional goodness and modern healthy indulgence. Flax seeds are naturally rich in omega-3 fatty acids, fiber, and antioxidants that help support heart health, digestion, and overall wellness while providing long-lasting natural energy.",
+    ingredients: "Flax seed powder, jaggery, cashew, sunflower seeds, pumpkin seeds, sesame seeds, groundnuts, oats, almond",
+    icons: [{i:'Heart', l:'Omega-3'}, {i:'Wheat', l:'Rich Fiber'}, {i:'Shield', l:'Antioxidants'}],
     price: "₹329", unit: "Pack of 6",
   },
   {
-    name: "Moringa Millet Balls", tag: "Superfood Infused",
-    img: "/assets/product images/moringa-millet-balls.png",
-    tagline: "Millet bites enriched with nutrient-dense moringa.",
-    ingredients: "Mixed Millets · Moringa Leaf Powder · Jaggery · Cashews",
-    icons: [{i:'Leaf', l:'Superfood'}, {i:'Shield', l:'Immunity Booster'}, {i:'Wheat', l:'Rich in Iron'}],
+    name: "Groundnut Sesame Laddu", tag: "Traditional Ingredients, Smarter Snacking",
+    img: "/assets/product images/7.Groundnut sesame laddu.jpg",
+    tagline: "A delicious guilt-free snack for families, fitness lifestyles, and mindful everyday indulgence.",
+    description: "Our Groundnut Sesame Laddu blends roasted peanuts, sesame seeds, and pure ghee into a rich, satisfying treat made for smarter snacking. Packed with protein, healthy fats, calcium, and natural energy, this wholesome laddu helps support strength, bone health, and overall wellness while satisfying sweet cravings the healthy way.",
+    ingredients: "Groundnut, sesame seeds, jaggery, almond slices",
+    icons: [{i:'Bolt', l:'Protein Rich'}, {i:'Heart', l:'Healthy Fats'}, {i:'Wheat', l:'Calcium Support'}],
     price: "₹349", unit: "Pack of 6",
   },
   {
-    name: "Multigrain Nut Balls", tag: "The Ultimate Crunch",
-    img: "/assets/product images/multigrain-nut-balls.png",
-    tagline: "A powerhouse of nine grains and premium nuts.",
-    ingredients: "9-Grain Mix · Walnuts · Almonds · Honey",
-    icons: [{i:'Bolt', l:'High Protein'}, {i:'Flame', l:'Energy Booster'}, {i:'Heart', l:'Healthy Fats'}],
+    name: "Ragi Laddu", tag: "Calcium-Rich Finger Millet Treat",
+    img: "/assets/product images/8.Ragi laddu.jpg",
+    tagline: "Loaded with calcium, fiber, and essential nutrients, it is crafted for smarter everyday snacking.",
+    description: "Our handcrafted Ragi Laddu combines nutrient-rich finger millet, roasted nuts, and pure ghee into a wholesome treat packed with natural energy and rich homemade flavor.",
+    ingredients: "Ragi, jaggery, ghee, elachi",
+    icons: [{i:'Wheat', l:'Calcium Rich'}, {i:'Wheat', l:'Rich Fiber'}, {i:'Flame', l:'Natural Energy'}],
     price: "₹379", unit: "Pack of 6",
+  },
+  {
+    name: "Assorted Laddu", tag: "A Wholesome Collection For Gifting",
+    img: "/assets/product images/9.Assorted laddu.jpg",
+    tagline: "Perfect for mindful snacking, family wellness, gifting, and guilt-free sweet cravings.",
+    description: "A wholesome collection of handcrafted traditional laddus made with nutrient-rich millets, lentils, dry fruits, seeds, nuts, and natural ingredients for the perfect balance of taste and nourishment. Carefully crafted using timeless recipes and real ingredients, our Assorted Laddu Box brings together rich flavors, natural energy, and healthy indulgence in every bite.",
+    ingredients: "Ragi, jowar, roasted urad dal, green gram, sattu, flax seeds, groundnuts, sesame seeds, premium dry fruits, nuts, pure ghee, jaggery, cardamom, natural ingredients",
+    icons: [{i:'Bolt', l:'Protein Rich'}, {i:'Wheat', l:'Rich Fiber'}, {i:'Heart', l:'Healthy Fats'}],
+    price: "₹399", unit: "Assorted box",
   },
 ];
 
@@ -260,6 +277,8 @@ function ProductCard({ p, index }) {
       <div className="product-body">
         <h3 className="product-name">{p.name}</h3>
         <p className="product-tagline">{p.tag}</p>
+        {p.tagline && <p className="product-summary">{p.tagline}</p>}
+        {p.description && <p className="product-description">{p.description}</p>}
         <p className="product-ingredients">{p.ingredients}</p>
         <div className="product-icons">
           {p.icons.map((ic, i) => {
@@ -292,7 +311,7 @@ export function Products() {
       <div className="section-head reveal">
         <div className="section-eyebrow">Try Our Delicious Range</div>
         <h2 className="section-title heading-condensed">Snacks <span className="accent">Worth Reaching For</span></h2>
-        <p className="section-sub">Five recipes, one rule — every ingredient earns its place. Roasted, baked, slow-cooked. Never fried, never compromised.</p>
+        <p className="section-sub">Nine handcrafted laddus made with millets, lentils, nuts, seeds, jaggery, and pure ghee for everyday nourishment.</p>
       </div>
       <div className="products-grid">
         {PRODUCTS.map((p, i) => <ProductCard key={i} p={p} index={i}/>)}

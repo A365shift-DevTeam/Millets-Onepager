@@ -646,6 +646,21 @@ body {
   line-height: 1.5;
 }
 
+.product-summary {
+  margin-top: 8px;
+  color: var(--brown-500);
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.product-description {
+  margin-top: 10px;
+  color: var(--brown-700);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
 .product-ingredients {
   margin-top: 14px;
   font-size: 12px;

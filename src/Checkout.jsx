@@ -3,14 +3,15 @@ import { supabase } from './supabase.js';
 import { useCart } from './CartContext.jsx';
 
 const PRODUCTS = [
-  { name: 'Assorted Millet Energy Balls',  tagline: 'A diverse mix of all our signature energy balls.', price: 399, unit: 'Pack of 8', img: '/assets/product images/Assorted Millet Energy Balls.png' },
-  { name: 'Ragi Classic Laddu',            tagline: 'Classic ragi laddu made with pure jaggery.',       price: 349, unit: '12 pcs',    img: '/assets/product images/Ragi Classic Laddu.png' },
-  { name: 'Ragi Mixed Nut Laddu',          tagline: 'Traditional ragi laddu loaded with premium mixed nuts.', price: 399, unit: '12 pcs',    img: '/assets/product images/Ragi Mixed Nut Laddu.png' },
-  { name: 'Foxtail Pumpkin Balls',         tagline: 'Foxtail millet infused with roasted pumpkin seeds.', price: 299, unit: 'Pack of 6', img: '/assets/product images/foxtail-pumpkin-balls.png' },
-  { name: 'Honey Oat Balls',               tagline: 'Wholesome oats sweetened naturally with wild honey.', price: 299, unit: 'Pack of 6', img: '/assets/product images/honey-oat-balls.png' },
-  { name: 'Jowar Almond Balls',            tagline: 'Roasted jowar combined with crushed almonds.',       price: 329, unit: 'Pack of 6', img: '/assets/product images/jowar-almond-balls.png' },
-  { name: 'Moringa Millet Balls',          tagline: 'Millet bites enriched with nutrient-dense moringa.', price: 349, unit: 'Pack of 6', img: '/assets/product images/moringa-millet-balls.png' },
-  { name: 'Multigrain Nut Balls',          tagline: 'A powerhouse of nine grains and premium nuts.',      price: 379, unit: 'Pack of 6', img: '/assets/product images/multigrain-nut-balls.png' },
+  { name: 'Urad Dal Laddu',              tagline: 'Perfect for healthy snacking, post-work nourishment, and everyday wellness.', price: 399, unit: 'Pack of 8',    img: '/assets/product images/1.Urad Dal Laddu.jpg' },
+  { name: 'Green Gram Laddu',            tagline: 'A perfect healthy snack for everyday nourishment.',                         price: 349, unit: '12 pcs',       img: '/assets/product images/2.Green gram laddu.jpg' },
+  { name: 'Jowar Millet Laddu',          tagline: 'Perfect for everyday nourishment, guilt-free sweet cravings, and healthy family snacking.', price: 399, unit: '12 pcs', img: '/assets/product images/3.Jowar Millet Laddu.jpg' },
+  { name: 'Sattu Laddu',                 tagline: "A timeless Indian superfood reimagined for today's lifestyle.",             price: 299, unit: 'Pack of 6',    img: '/assets/product images/4.Sattu Laddu.jpg' },
+  { name: 'Dry Fruit Laddu',             tagline: 'A guilt-free snack for everyday nourishment, fitness lifestyles, and family wellness.', price: 299, unit: 'Pack of 6', img: '/assets/product images/5.Dry Fruit Laddu.jpg' },
+  { name: 'Flaxseed Laddu',              tagline: 'Perfect for healthy snacking, mindful sweet cravings, and everyday family wellness.', price: 329, unit: 'Pack of 6', img: '/assets/product images/6.Flaxseed Laddu.jpg' },
+  { name: 'Groundnut Sesame Laddu',      tagline: 'A delicious guilt-free snack for families, fitness lifestyles, and mindful everyday indulgence.', price: 349, unit: 'Pack of 6', img: '/assets/product images/7.Groundnut sesame laddu.jpg' },
+  { name: 'Ragi Laddu',                  tagline: 'Loaded with calcium, fiber, and essential nutrients, it is crafted for smarter everyday snacking.', price: 379, unit: 'Pack of 6', img: '/assets/product images/8.Ragi laddu.jpg' },
+  { name: 'Assorted Laddu',              tagline: 'Perfect for mindful snacking, family wellness, gifting, and guilt-free sweet cravings.', price: 399, unit: 'Assorted box', img: '/assets/product images/9.Assorted laddu.jpg' },
 ];
 
 function mkOrderNum() {
